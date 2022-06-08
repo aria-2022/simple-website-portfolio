@@ -1,0 +1,165 @@
+/*transferred from the main page*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,300;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a{
+    display: inline-block; 
+    padding: 10px 20px;
+    background: rgb(191, 189, 189);
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(5, 5, 5, 0.2);
+ }
+ a:hover{
+     color: #fd4766;
+ }
+ a:after{
+     content: "";
+     position: absolute;
+     left: 0;
+     width: 0;
+     height: 3px;
+     background: #fd4766;
+     transition: .3s;
+     bottom: 0;
+ }
+ a:hover:after{
+     width: 100;
+ }
+nav{
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    padding: 55px 45px;
+    margin-top: -4%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #fd4766;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #fd4766;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100;
+}
+h1{
+    text-align: center;
+    padding-top: -10%;
+    padding-bottom: 4%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Raleway", italic;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .box{
+    position: relative;
+    width: 420px;
+    padding: 40px;
+    background: #fa6780;
+    box-shadow: 0 15px 25px rgba(54, 54, 54, 0.1);
+    border-radius: 6px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.container .box:before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(250,250,250, .2);
+    z-index: 2;
+}
+.container .box .icon{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    color: rgba(236, 95, 95);
+    background: rgb(191, 189, 189);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 47%;
+    font-size: 42px;
+    font-weight: 750;
+    transition: 1s;
+}
+.container .box:nth-child(1) .icon{
+box-shadow: 0 0 0 0 #a7a7a7;
+background: #a7a7a7;
+}
+.container .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 0 400px #a7a7a7;
+}
+.container .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #7287f9;
+    background: #7287f9;
+}
+.container .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 0 400px #7287f9;
+}
+.container .box:nth-child(3) .icon{
+    box-shadow: 1 1 1 1 #df73cf;
+    background: #df73cf;
+}
+.container .box:nth-child(3):hover .icon{
+    box-shadow: 1 1 1 1 #df73cf;
+}
+.container .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box:hover .content{
+    color: #fff;
+}
+.container .box .content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+}
